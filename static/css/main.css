@@ -1138,6 +1138,12 @@ html, body {
   background-color: #eff2f7;
 }
 
+@media screen and (max-width: 1300px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
 .mfp-close {
   background-image: url("../img//minified-svg/icon_close.svg") !important;
   background-repeat: no-repeat !important;
@@ -1451,6 +1457,8 @@ html, body {
 @media screen and (max-width: 1300px) {
   .main {
     width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
