@@ -1193,6 +1193,14 @@ html, body {
   margin-bottom: 1.25rem;
 }
 
+@media screen and (max-width: 1300px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .filter__title {
   padding-bottom: 0.125rem;
   margin-right: 1.6875rem;
@@ -1204,6 +1212,13 @@ html, body {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media screen and (max-width: 470px) {
+  .filter__title {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .filter__title_active {
@@ -1230,6 +1245,12 @@ html, body {
   background-color: gray;
 }
 
+@media screen and (max-width: 1300px) {
+  .big-banner {
+    display: none !important;
+  }
+}
+
 .big-banner__title {
   margin-bottom: 2.0625rem;
   font-family: "newbaskerville", sans-serif;
@@ -1243,6 +1264,23 @@ html, body {
   font-family: "newbaskerville", sans-serif;
   font-size: 1.25rem;
   color: white;
+}
+
+.big-banner_tablet {
+  display: none !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .big-banner_tablet {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-size: cover;
+  }
 }
 
 .country {
@@ -1410,10 +1448,29 @@ html, body {
   margin-left: auto;
 }
 
+@media screen and (max-width: 1300px) {
+  .main {
+    width: 100%;
+  }
+}
+
 .main__country-block:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (max-width: 1300px) {
+  .main__country-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main__country {
@@ -1421,9 +1478,21 @@ html, body {
   margin-bottom: 1.25rem;
 }
 
+@media screen and (max-width: 1300px) {
+  .main__country {
+    margin-left: 1.25rem;
+  }
+}
+
 .main__country:nth-child(4n+8) {
   float: right;
   margin-right: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .main__country:nth-child(4n+8) {
+    margin-right: 1.25rem;
+  }
 }
 
 .main__big-banner {
